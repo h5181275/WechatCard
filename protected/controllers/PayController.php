@@ -43,7 +43,7 @@ class PayController extends Controller
         $dataIn['out_trade_no'] = $this->_MCHID.date("YmdHis");
         $dataIn['total_fee'] = '1';
         $dataIn['spbill_create_ip'] = Yii::$app->request->userIp;
-        $dataIn['notify_url'] = 'http://wow.kfc.trioisobardev.com/pay/callback';
+        $dataIn['notify_url'] = 'http://www.xxx.com/pay/callback';
         $dataIn['trade_type'] = 'NATIVE';
         $dataIn['sign'] = $this->MakeSign($dataIn);
 
